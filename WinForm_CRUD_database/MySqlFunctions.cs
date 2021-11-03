@@ -11,7 +11,8 @@ namespace MySqlDatabase
     public class MySqlFunctions
     {
 
-        public static MySqlConnection GetConnection(string datasource, string username, string password, string database)
+        public static MySqlConnection GetConnection(string datasource, string username,
+            string password, string database)
         {
             string sql = "datasource=" + datasource +
                          ";username=" + username +
@@ -32,7 +33,8 @@ namespace MySqlDatabase
             return connectSql;
         }
 
-        public static void DataToListView(MySqlCommand commandSql, ListView listViewForm, int totalColumns)
+        public static void DataToListView(MySqlCommand commandSql, ListView listViewForm,
+            int totalColumns, bool removeFirstColum = true)
         {
             MySqlDataReader readerSql = commandSql.ExecuteReader();
 
@@ -44,7 +46,14 @@ namespace MySqlDatabase
 
                 for (int n = 1; n <= totalColumns; n++)
                 {
-                    row[n - 1] = readerSql.GetString(n);
+                    if (removeFirstColum)
+                    {
+                        row[n - 1] = readerSql.GetString(n);
+                    }
+                    else
+                    {
+                        row[n] = readerSql.GetString(n);
+                    }
                 }
 
                 ListViewItem lv_row = new ListViewItem(row);

@@ -45,7 +45,7 @@ namespace WinForm_CRUD_database
             connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
             commandSql = new MySqlCommand(querySql, connectSql);
 
-            MySqlFunctions.DataToListView(commandSql, listViewProducts, 3);
+            MySqlFunctions.DataToListView(commandSql, listViewProducts, 3, false);
 
             connectSql.Close();
         }
@@ -142,7 +142,7 @@ namespace WinForm_CRUD_database
         private void ButtonDeleteClick(object sender, EventArgs e)
         {
             string querySql = "DELETE FROM products WHERE Product = @product";
-            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
+            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop")    ;
 
             commandSql = new MySqlCommand(querySql, connectSql);
 
