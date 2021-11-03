@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RU7ZEYnXZHKuev1PPldm1e/4KCQ54dtbko04levmqtpCNJ2F9DP8qaVthB3aQTuiy9MMh+uvCvo5amc2n8D3DQ==",
+  "dgSpecHash": "SjAjEATZ1rlcGjLyl1hN7QFclcjOulBmDj3k/VH5fjMGJ2kZD5qXolGSUvSqNqTMrUvNUDvSDr6nHY9TpAE/5g==",
   "success": true,
-  "projectFilePath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
+  "projectFilePath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pichau\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",

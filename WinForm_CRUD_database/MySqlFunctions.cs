@@ -15,7 +15,7 @@ namespace MySqlDatabase
         {
             string sql = "datasource=127.0.0.1;" +
                          "username=root;" +
-                         "password=VaSs2021Fr@$;" +
+                         "password=pa55w0rd;" +
                          "database=myshop";
             MySqlConnection connectSql = new MySqlConnection(sql);
 

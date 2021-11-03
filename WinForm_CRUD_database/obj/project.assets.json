@@ -854,11 +854,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
+      "projectUniqueName": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
       "projectName": "ShopCRUD",
-      "projectPath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
+      "projectPath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\ShopCRUD\\WinForm_CRUD_database\\ShopCRUD.csproj",
       "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\WinForm_CRUD_database\\obj\\",
+      "outputPath": "D:\\Vinicius\\C#\\WinForm_CRUD_database\\ShopCRUD\\ShopCRUD\\WinForm_CRUD_database\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config",
