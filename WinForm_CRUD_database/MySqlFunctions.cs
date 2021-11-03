@@ -11,12 +11,12 @@ namespace MySqlDatabase
     public class MySqlFunctions
     {
 
-        public static MySqlConnection GetConnection()
+        public static MySqlConnection GetConnection(string datasource, string username, string password, string database)
         {
-            string sql = "datasource=127.0.0.1;" +
-                         "username=root;" +
-                         "password=pa55w0rd;" +
-                         "database=myshop";
+            string sql = "datasource=" + datasource +
+                         ";username=" + username +
+                         ";password=" + password +
+                         ";database=" + database;
             MySqlConnection connectSql = new MySqlConnection(sql);
 
             try

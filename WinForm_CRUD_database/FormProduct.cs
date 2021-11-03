@@ -42,7 +42,7 @@ namespace WinForm_CRUD_database
         public void UpdateList()
         {
             string querySql = "SELECT * FROM products";
-            connectSql = MySqlFunctions.GetConnection();
+            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
             commandSql = new MySqlCommand(querySql, connectSql);
 
             MySqlFunctions.DataToListView(commandSql, listViewProducts, 3);
@@ -55,7 +55,7 @@ namespace WinForm_CRUD_database
             try
             {
                 string querySql = "SELECT * FROM products WHERE Product LIKE @search";
-                connectSql = MySqlFunctions.GetConnection();
+                connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
                 commandSql = new MySqlCommand(querySql, connectSql);
 
                 commandSql.Parameters.AddWithValue("@search", "%" + textBoxSearch.Text + "%");
@@ -77,7 +77,7 @@ namespace WinForm_CRUD_database
         {
             string querySql = "INSERT INTO products VALUES (UUID(), @product, @quant, @val)";
 
-            connectSql = MySqlFunctions.GetConnection();
+            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
 
             commandSql = new MySqlCommand(querySql, connectSql);
 
@@ -111,7 +111,7 @@ namespace WinForm_CRUD_database
             string querySql = "UPDATE products SET Product = @product, quantity = @quant, " +
                 "value = @val WHERE Product = @product";
 
-            connectSql = MySqlFunctions.GetConnection();
+            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
 
             commandSql = new MySqlCommand(querySql, connectSql);
 
@@ -142,7 +142,7 @@ namespace WinForm_CRUD_database
         private void ButtonDeleteClick(object sender, EventArgs e)
         {
             string querySql = "DELETE FROM products WHERE Product = @product";
-            connectSql = MySqlFunctions.GetConnection();
+            connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
 
             commandSql = new MySqlCommand(querySql, connectSql);
 
