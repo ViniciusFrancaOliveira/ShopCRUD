@@ -45,7 +45,7 @@ namespace WinForm_CRUD_database
             connectSql = MySqlFunctions.GetConnection("127.0.0.1", "root", "pa55w0rd", "myshop");
             commandSql = new MySqlCommand(querySql, connectSql);
 
-            MySqlFunctions.DataToListView(commandSql, listViewProducts, 3, false);
+            MySqlFunctions.DataToListView(commandSql, listViewProducts, 3);
 
             connectSql.Close();
         }
