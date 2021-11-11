@@ -1,6 +1,6 @@
 # ShopCRUD
 
-Basic shop using Windows Form .net Framework with CRUD operations connected with a local database.
+Basic shop using Windows Form .net Framework with CRUD operations connected to a local database.
 
 <hr/>
 
